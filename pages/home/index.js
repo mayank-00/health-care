@@ -6,7 +6,7 @@ import SearchBar from "components/SearchBar";
 import FiltersColumn from "components/PageHome/FiltersColumn";
 import JobsColumn from "components/PageHome/JobsColumn";
 
-import envVariables from "utils/envVariable";
+// import envVariables from "utils/envVariable";
 
 let nextTextToSearch = ""
 
@@ -37,7 +37,7 @@ const Home = ({ }) => {
         setIsFetching(true)
         nextTextToSearch = ""
 
-        fetch(`${envVariables.BASE_URL}/api/jobs?search=${text}`, {
+        fetch(`/api/jobs?search=${text}`, {
             method: 'get',
             dataType: 'json',
             headers: {

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import CardShowingList from "components/CardShowingList"
 import CardContainer from "./CardContainer"
 
-import envVariables from "utils/envVariable";
+// import envVariables from "utils/envVariable";
 
 const mapper = {
     job_type: "JOB TYPE",
@@ -21,7 +21,7 @@ const FiltersColumn = ({ }) => {
     }, [])
 
     const getFilters = () => {
-        fetch(`${envVariables.BASE_URL}/api/filters`, {
+        fetch(`/api/filters`, {
             method: 'get',
             dataType: 'json',
             headers: {
