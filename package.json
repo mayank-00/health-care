@@ -1,0 +1,27 @@
+{
+  "name": "health-care",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next -p 3999",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.6.3",
+    "postcss": "^8.2.7",
+    "tailwindcss": "^2.0.3"
+  }
+}

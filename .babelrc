@@ -1,0 +1,25 @@
+{
+    "presets": [
+        "next/babel"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "."
+                ],
+                "alias": {
+                    "utils": "./utils",
+                    "components": "./components",
+                    "constants": "./constants",
+                    "data": "./data",
+                    "pages": "./pages",
+                    "api": "./pages/api",
+                    "images": "./static/images",
+                    "mocks": "./__mocks__"
+                }
+            }
+        ]
+    ]
+}
